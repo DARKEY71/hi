@@ -125,17 +125,17 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
-TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arolinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '4574770a1b3e06b54b609f961e87efe837ea31cf')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Sk_entertains') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
 # Others
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
+MSG_ALRT = environ.get('MSG_ALRT', 'Hello Babe 🫣🤫')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
