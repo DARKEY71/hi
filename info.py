@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/c14c05dc35ad2bf7722e8-340708660e717bf811.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/1b2a3e6da4c27fd0d1759-79b98347cf670e9b0c.jpg')).split()
 
 
 # Admins & Users
@@ -37,7 +37,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set Tru
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002479915879') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002300089308') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
@@ -48,11 +48,11 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002490143561')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002359252564')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002183731645')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002620016165'')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002378615137').split()]  # For Multiple Id Use One Space Between Each.
@@ -60,8 +60,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bosureddy203:oXF7xxNoXChUTETP@cluster0.gohm3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "lakkiclonefilterbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'lakkicollection')
+DATABASE_NAME = environ.get('DATABASE_NAME', "darkeyclonefilterbot")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'darkeycollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'jwgebceicevejv') # Pub
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+or2xXAg5nQ8yY2Vl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+eZz6TllNKIpkMmRl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+PyCR8DvglD4yNDI1') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/+PyCR8DvglD4yNDI1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ONE_PIECE_DIS')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/DG_Linkz_Telugu')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ONE_PIECE_DIS') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ONE_PIECE_DIS')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -123,12 +123,11 @@ VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
-
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arolinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '4574770a1b3e06b54b609f961e87efe837ea31cf')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Sk_entertains') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+SHORTLINK_API = environ.get('SHORTLINK_API', '7870a2c4056ef87aa5052ed7f871c01f16c3191e')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/DG_Linkz_Telugu/545') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
 # Others
